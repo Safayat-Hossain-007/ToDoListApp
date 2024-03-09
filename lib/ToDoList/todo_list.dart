@@ -93,8 +93,10 @@ class _ToDoListAppState extends State<ToDoListApp> {
                             _toggleTaskCompletion(index);
                           },
                         ),
+                        onLongPress: (){
+                          _deleteTask(index);
+                        },
                       );
-
                     },
                   ),
               ),
